@@ -64,57 +64,65 @@ form  {
 
 
 
-#Exchange{
+#Exchange {
     border-radius: 15px;
-    cursor:pointer;
+    cursor: pointer;
     border: 2px solid black;
     background: transparent;
-    background-color: #1F2421;
+    background-color: #1F2421; 
     min-width: 70px;
-  }
-  
-  .first ,.second{
+    color: white; 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#Exchange:hover {
+    background-color: rgb(20, 19, 19); 
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(234, 233, 232, 0.6); 
+}
+
+.first ,.second{
     display: flex;  
     justify-content: flex-start; 
     gap:10px; 
     border: 2px solid black;
     border-radius:15px ;
     background-color: #1F2421;
-  }
+}
 
-  img{
+img{
     margin-left:8px ;
-  }
+}
 
-  .choose{
+.choose{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     max-width: 330px;    
-  }
+}
 
-  .popup{
+.popup{
     display: flex;
     justify-content: start;
-  }
+}
 
 
-  .input{
+.input{
     height: 50px;
     font-size: 30px;
     text-align: start;
-  }
-  
-  select, .input {
+}
+
+select, .input {
     background: transparent; /* Makes background transparent */
     color:white; /* Text color */
     appearance: none; /* Removes default OS styling */
     outline: none;
     border:none;
     opacity: 1;
-  }
+}
 
-  .custom-select {
+.custom-select {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -126,168 +134,166 @@ form  {
 
 /* Popup Container */
 .popup-container {
-position: fixed;
-visibility: hidden;
-bottom: -100%; /* Hidden by default */
-width: 40%;
-background: black;
-padding: 20px;
-box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
-border-radius: 20px 20px 0 0;
-transition: bottom 0.3s ease-in-out;
-max-height: 95%;
+    position: fixed;
+    visibility: hidden;
+    bottom: -100%; /* Hidden by default */
+    width: 40%;
+    background: black;
+    padding: 20px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0 0;
+    transition: bottom 0.3s ease-in-out;
+    max-height: 95%;
 
 }
 
 .popup-container.show {
-bottom: 0; /* Slide up */
-visibility: visible;
+    bottom: 0; /* Slide up */
+    visibility: visible;
 }
 
 .options {
-list-style: none;
-padding: 20px 0;
-margin: 0;
-overflow-y: auto;
-overflow-x: hidden;
-max-height: 800px;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 800px;
 }
 
 .options li {
-padding: 15px;
-text-align: center;
-border-bottom: 1px solid #ddd;
-cursor: pointer;
-font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 li:hover{  
-  color: darkorange; 
-  transform: scale(1.2);
+    color: darkorange; 
+    transform: scale(1.2);
 } 
 
 
 .close-btn {
-margin-top: 15px;
-display: block;
-width: 100%;
-text-align: center;
-padding: 10px;
-background: red;
-color: white;
-border-radius: 10px;
-cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .popup-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  padding: 10px;
-  font-size: 22px;
-  font-weight: bold;
-  background: black; /* Dark background */
-  color: white;
-  border-radius: 15px 15px 0 0;
-  position: sticky; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    background: black; /* Dark background */
+    color: white;
+    border-radius: 15px 15px 0 0;
+    position: sticky; 
 }
 
 #selectCurr{
-  align-items: center;
-  font-size: 30px;
-  width:100%;
+    align-items: center;
+    font-size: 30px;
+    width:100%;
 }
 
 .close-icon {
-  font-size: 24px;
-  cursor: pointer;
-  color: orange;
-  left: 10px; /* Pushes it to the left */
-  transition: transform 0.3s ease-in-out;
+    font-size: 24px;
+    cursor: pointer;
+    color: orange;
+    left: 10px; /* Pushes it to the left */
+    transition: transform 0.3s ease-in-out;
 }
 
 .close-icon:hover {
-  transform: scale(1.3);
-  color: darkorange;
+    transform: scale(1.3);
+    color: darkorange;
 }
 
 .popup-title {
-  flex-grow: 1; /* Ensures it takes up space and stays in the center */
-  text-align: center;
+    flex-grow: 1; /* Ensures it takes up space and stays in the center */
+    text-align: center;
 }
 
 
 ::-webkit-scrollbar {
-  display:none;
+    display:none;
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: cnter;
-  gap: 10px; /* Space between rows */
-  margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: cnter;
+    gap: 10px; /* Space between rows */
+    margin-top: 1em;
 }
 
 .button-container div {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2em; /* Space between buttons */
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em; /* Space between buttons */
 }
 
 .num {
-  height: 80px;
-  width: 85px;
-  border-radius: 50%; /* Makes buttons circular */
-  background-color: #1c1f1d; /* Dark background */
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border:none;
-  text-align: center;
+    height: 80px;
+    width: 85px;
+    border-radius: 50%; /* Makes buttons circular */
+    background-color: #1c1f1d; /* Dark background */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border:none;
+    text-align: center;
 }
 
 .num:hover{
-  transform:scale(1.1);
-  background-color:black; /* Color changes on hover */
-  color:white;
-
+    transform:scale(1.1);
+    background-color:black; /* Color changes on hover */
+    color:white;
 }
-
-
 
 .ex{
-  background: none;
+    background: none;
 }
+
 .ex:hover{
-  background-color: none;
-  background: none
+    background-color: none;
+    background: none
 }
 
 .last{
-  margin-top: 0px;
-  font-size:16px;
-  color:rgb(0, 0, 0);
-  font-weight: 550;
+    margin-top: 0px;
+    font-size:16px;
+    color:rgb(0, 0, 0);
+    font-weight: 550;
 }
 
 
 #popup-message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: black;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 20px;
-  display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
 }
 
 
