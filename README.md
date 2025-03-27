@@ -14,9 +14,11 @@ It allows users to convert one currency to another in real-time.
 ## 🛠 Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - API: https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@${date}/v1/currencies
+  
 
 ## 📸 Screenshots
-![Currency Converter](https://github.com/user-attachments/assets/79a6d248-d06a-4c27-b054-840baec9110d)
+![Currency Converter](https://github.com/user-attachments/assets/dd4560e7-c88b-421b-9bab-f1ed1f1c7452)
+
 
 ## 🌍 Live Demo
 [Click Here to Try](YOUR_DEPLOYMENT_LINK)
