@@ -18,10 +18,11 @@ body {
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Navy Blue Gradient */
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    zoom:0.9;
 }
 
 h1{
+    margin-top:0px;
     font-size: 50px;
     font-weight: 900;
 }
