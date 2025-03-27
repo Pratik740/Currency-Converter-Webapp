@@ -1,4 +1,4 @@
-const countryList = {
+    const countryList = {
     "UAE Dirham AED": "AE",
     "Afghan Afghani AFN": "AF",
     "Antigua Dollar XCD": "AG",
